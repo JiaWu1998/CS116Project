@@ -1,6 +1,6 @@
 package final_IDJW2018;
 
-public class Restaurant_IDJW extends Sanitation_IDJW{
+public class Restaurant_IDJW extends Sanitation_IDJW {
 	private String name;
 	private Location_IDJW locationA;
 	private String hours;
@@ -17,7 +17,8 @@ public class Restaurant_IDJW extends Sanitation_IDJW{
 		sanitation = "";
 	}
 
-	public Restaurant_IDJW(String name1, String location1, String hours1, String foodType1, double avgPrice1,String sanitation1) {
+	public Restaurant_IDJW(String name1, String location1, String hours1, String foodType1, double avgPrice1,
+			String sanitation1) {
 		name = name1;
 		locationA = new Location_IDJW(location1);
 		hours = hours1;
@@ -50,7 +51,7 @@ public class Restaurant_IDJW extends Sanitation_IDJW{
 		double x = avgPrice;
 		return x;
 	}
-	
+
 	public String getSanitationStatus() {
 		String x = sanitation;
 		return x;
@@ -75,34 +76,35 @@ public class Restaurant_IDJW extends Sanitation_IDJW{
 	public void setAvgPrice(double avgPrice1) {
 		avgPrice = avgPrice1;
 	}
-	
+
 	public void setSanitationStatus(String sanitation1) {
 		sanitation = sanitation1;
 	}
-	
-	public boolean equals(Restaurant_IDJW r1) {
-		if((r1.getName() == name) && (r1.locationA == locationA)) {
+
+	@Override
+	public boolean equals(Object r1) {
+		Restaurant_IDJW r2 = (Restaurant_IDJW) r1;
+		if ((r2.getName().equals(name)) && (r2.locationA.equals(locationA))) {
 			return true;
-		}
-		else {
+		} else {
 			return false;
 		}
 	}
-	
+
 	public int compareTo(Restaurant_IDJW r1) {
-		if((r1.getName().equals(name)) && (r1.locationA.equals(locationA))) {
+		if ((r1.getName().equals(name)) && (r1.locationA.equals(locationA))) {
 			return 0;
-		}
-		else if(r1.getName().compareTo(name) > 0) {
+		} else if (r1.getName().compareTo(name) > 0) {
 			return 1;
-		}
-		else {
+		} else {
 			return -1;
 		}
 	}
-	
+
+	@Override
 	public String toString() {
-		return "Name: " + name + ", " + locationA.toString() + ", Hours: " + hours + ", Food Type: " + foodType + ", Average Price: " + avgPrice + ", Sanitation Status: " + sanitation;
+		return "Name: " + name + ", " + locationA.toString() + ", Hours: " + hours + ", Food Type: " + foodType
+				+ ", Average Price: " + avgPrice + ", Sanitation Status: " + sanitation;
 	}
-	
+
 }

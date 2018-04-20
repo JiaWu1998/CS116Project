@@ -3,15 +3,17 @@ package final_IDJW2018;
 public class Sit_Down_IDJW extends Restaurant_IDJW {
 
 	private boolean reservation;
-	private String sanitationSit;
+	
 
 	public Sit_Down_IDJW() {
 		super();
+		
 		reservation = false;
 	}
 			
 	public Sit_Down_IDJW(String name1, String location1, String hours1, String foodType1, double avgPrice1,String sanitation1, boolean reservation1) {
 		super(name1, location1, hours1, foodType1, avgPrice1, sanitation1);
+		
 		reservation = reservation1;
 	}
 
@@ -26,16 +28,18 @@ public class Sit_Down_IDJW extends Restaurant_IDJW {
 
 	@Override
 	public String getSanitationStatus() {
-		String x = "Type: Sit-Down, " + sanitationSit;
+		String x = "Type: Sit-Down, Sanitation Status: " + super.getSanitationStatus();
 		return x;
 	}
 	@Override
-	public void setSanitationStatus(String sanitation1) {
-		sanitationSit = sanitation1;
-	}
-	
-	public boolean equals(Sit_Down_IDJW sd1) {
-		if((sd1.getName() == super.getName()) && (sd1.getLocationA() == super.getLocationA())) {
+	public boolean equals(Object sd1) {
+		Sit_Down_IDJW sd2 = new Sit_Down_IDJW();
+		if(sd1 instanceof Sit_Down_IDJW) {
+			sd2 = (Sit_Down_IDJW) sd1;
+		}else {
+			return false;
+		}
+		if((sd2.getName().equals(super.getName())) && (sd2.getLocationA().equals(super.getLocationA()))) {
 			return true;
 		}
 		else {
@@ -54,7 +58,7 @@ public class Sit_Down_IDJW extends Restaurant_IDJW {
 			return -1;
 		}
 	}
-	
+	@Override
 	public String toString() {
 		String x;
 		if(reservation == true) {

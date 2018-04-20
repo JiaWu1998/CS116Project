@@ -204,8 +204,10 @@ public class MenuList_IDJW{
 
 	  public void clear(){
 
-	    array = new Restaurant_IDJW[capacity];
-
+		Restaurant_IDJW arr[] = new Restaurant_IDJW[capacity];
+		  
+		array = arr;
+		  
 	    indexOfNext = 0;
 
 	  }
