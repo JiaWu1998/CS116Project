@@ -53,6 +53,12 @@ public class Stand_IDJW extends Restaurant_IDJW {
 			return -1;
 		}
 	}
+	
+	@Override
+	public int type() {
+		return 3;
+	}
+	
 	@Override
 	public String toString() {
 		return super.toString() + ", Open Months: " + openMonths;

@@ -58,6 +58,12 @@ public class Sit_Down_IDJW extends Restaurant_IDJW {
 			return -1;
 		}
 	}
+	
+	@Override
+	public int type() {
+		return 1;
+	}
+	
 	@Override
 	public String toString() {
 		String x;

@@ -1,6 +1,6 @@
 package final_IDJW2018;
 
-public class Restaurant_IDJW extends Sanitation_IDJW {
+public class Restaurant_IDJW extends Sanitation_IDJW implements RestaurantInterface_IDJW {
 	private String name;
 	private Location_IDJW locationA;
 	private String hours;
@@ -99,6 +99,11 @@ public class Restaurant_IDJW extends Sanitation_IDJW {
 		} else {
 			return -1;
 		}
+	}
+	
+
+	public int type() {
+		return 0;
 	}
 
 	@Override

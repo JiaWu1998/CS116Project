@@ -52,6 +52,12 @@ public class Truck_IDJW extends Restaurant_IDJW {
 			return -1;
 		}
 	}
+	
+	@Override
+	public int type() {
+		return 2;
+	}
+	
 @Override
 	public String toString() {
 		return super.toString() + ", Truck Radius: " + radius;

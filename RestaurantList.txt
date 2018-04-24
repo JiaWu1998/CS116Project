@@ -1,0 +1,10 @@
+Good Food, 103 Wabash Ave, 10am - 10pm, American, 23.00, Not Approved, false
+Bad Food, 100 Roosevelt Street, 9am - 7pm, American, 13.00, Approved, 2
+Okay Food, 101 Michigan Avenue, 1am - 1pm, Mediterranean, 22.00, Approved, January - March
+Food, 1 Belaire Court, 2am - 9am, Italian, 32.00, Not Approved, true
+Mexico On-The-Go, 7 Michigan Avenue, 3pm - 2am, Mexican, 9.50, Approved, 3
+Maxwell Street Pub, 300 West Jefferson Street, 6am - 10pm, Asian, 24.00, true
+Bar Louie, 14 Roosevelt Avenue, 5pm - 4am, American, 33.80, Approved, true
+Devil Dogs, 50 South State Street, 12pm - 5am, American Fast Food, 7.50, Approved, August - September
+Chicago's Best, 10 South Grand Avenue, 8am - 10pm, American, 24.00, Not Approved, true
+Shake Shack, 35 Michigan Avenue, 9am - 10pm, American Fast Food, 22.00, Not Approved, July - April
